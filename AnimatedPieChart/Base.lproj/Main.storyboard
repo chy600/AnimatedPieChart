@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pjn-pY-YOO">
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PNd-kL-qyl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFI-PN-MBa">
+                                <rect key="frame" x="20" y="50" width="560" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwJ-y9-PGb">
+                                        <rect key="frame" x="0.0" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UwJ-y9-PGb" secondAttribute="height" multiplier="1:1" id="Kcr-LB-9GS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Cm-gf-U04">
+                                        <rect key="frame" x="108" y="52" width="452" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pt-NL-xZq">
+                                        <rect key="frame" x="108" y="0.0" width="452" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UwJ-y9-PGb" firstAttribute="leading" secondItem="hFI-PN-MBa" secondAttribute="leading" id="Mf1-Vp-eIn"/>
+                                    <constraint firstAttribute="bottom" secondItem="UwJ-y9-PGb" secondAttribute="bottom" constant="10" id="Rwq-Si-8c1"/>
+                                    <constraint firstItem="UwJ-y9-PGb" firstAttribute="top" secondItem="hFI-PN-MBa" secondAttribute="top" constant="10" id="W5o-7i-N8I"/>
+                                    <constraint firstAttribute="height" constant="100" id="XeL-5G-ffN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pjn-pY-YOO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5dV-qO-13V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pjn-pY-YOO" secondAttribute="trailing" id="MPy-Xd-8GB"/>
+                            <constraint firstItem="hFI-PN-MBa" firstAttribute="top" secondItem="pjn-pY-YOO" secondAttribute="bottom" id="ULK-gc-gTK"/>
+                            <constraint firstItem="hFI-PN-MBa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bn3-6h-T2l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hFI-PN-MBa" secondAttribute="trailing" id="jYb-lA-UHm"/>
+                            <constraint firstItem="pjn-pY-YOO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tZs-LA-1Ea"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="6Cm-gf-U04" id="RVh-9w-Ce3"/>
+                        <outlet property="percentLabel" destination="UwJ-y9-PGb" id="D4V-3x-2Fe"/>
+                        <outlet property="sliceTitleLabel" destination="0Pt-NL-xZq" id="FzH-rt-vTD"/>
+                        <outlet property="titleLabel" destination="pjn-pY-YOO" id="0aN-WP-McY"/>
+                        <outlet property="titleView" destination="hFI-PN-MBa" id="LFo-tU-x4Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="304"/>
+        </scene>
+    </scenes>
+</document>
